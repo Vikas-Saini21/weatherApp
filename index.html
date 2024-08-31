@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="enter the city..." class="inputbox">
+                <button id="searchbtn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="location_not_exist">
+            <h2>Oops! Invailid location</h2>
+            <img src="404.png" alt="#">
+        </div>
+        <div class="weather_show">
+            <img src="https://static.vecteezy.com/system/resources/previews/021/692/857/non_2x/thunderstorm-cloud-rain-drops-and-lightning-cute-weather-realistic-icon-3d-cartoon-vector.jpg" alt="#" class="wimg">
+            <div class="weather_box">
+                <p class="temp">0<sup>0</sup>C</p>
+                <p class="description">light Rain</p>
+            </div>
+            <div class="weather_details">
+                <div class="humidity" >
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">50%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-sharp fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind_speed">80km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const  inputbox= document.querySelector('.inputbox')
+    const searchbtn=document.getElementById('searchbtn')
+    const wimg=document.querySelector('.wimg')
+    const temp=document.querySelector('.temp')
+    const description=document.querySelector('.description')
+    const humidity=document.getElementById('humidity')
+    const wind_speed=document.getElementById('wind_speed')
+    searchbtn.addEventListener('click',()=>{
+        chkWeather(inputbox.value)
+    })
+</script>
+</html>
