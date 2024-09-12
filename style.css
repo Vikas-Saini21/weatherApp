@@ -1,21 +1,26 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
+    font-family: "Goudy Bookletter 1911", sans-serif
 }
-body{
+body
+{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-image: url(https://www.festivalsherpa.com/wp-content/uploads/2015/09/colorado-balloon-classic.jpg);
 }
-.container{
+
+.container
+{
     width: 400px;
     height:min-content;
-    background-color: rgb(255, 255, 255);
+    background-color:white;
     border-radius: 12px;
     padding: 30px;
 }
@@ -27,93 +32,106 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.searchbox input{
+.searchbox input
+{
     width: 85%;
     font-size: 22px;
-    background-color: #ff0000;
-    color: black;
+    background-color: #564495;
+    color: #fff; 
     border-radius: 14px;
     padding: 12px 16px;
 }
-.searchbox button{
+.searchbox button
+{
     width: 50px;
     height: 50px;
-    background-color: #ff0000;
+    background-color: #564495;
     border-radius: 50%;
     font-size: 20px;
 }
-.searchbox button:hover{
+.searchbox button:hover
+{
     color: red;
     background-color:pink;
 }
-.weather_show{
+.weather_show
+{
     margin-block: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: none; 
+    /* display: none;  */
 }
-.weather_show img{
-    width: 60%;
+.weather_show img
+{
+    width: 100%;
 }
-.weather_box{
+.weather_box
+{
     margin-block: 20px;
     text-align: center;
 }
-.weather_box .temp{
+.weather_box .temp
+{
     font-size: 40px;
     position: relative;
     font-weight: 800;
 
 }
-.weather_box .temp sup{
-    position: absolute;
-    font-size: 25px;
-    font-weight: 700;
 
-}
-.weather_box .description{
+.weather_box .description
+{
     font-size: 20px;
     font-weight: 700;
 }
-.weather_details{
+.weather_details
+{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-.humidity,.wind{
+.humidity,.wind
+{
     display: flex;
     align-items: center;
 }
-.humidity{
+.humidity
+{
     margin-left: 20px;
 }
-.wind{
+.wind
+{
     margin-right: 20px;
 }
-.weather_details .i{
+.weather_details .i
+{
     font-size: 40px;
 }
-.weather_details .text{
+.weather_details .text
+{
     margin-left: 10px;
     font-size: 20px;
 }
-.text span{
+.text span
+{
     font-size: 20px;
 
 }
-.location_not_exist{
+.location_not_exist
+{
     margin-top: 20px;
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.location_not_exist h2{
+.location_not_exist h2
+{
     font-size: 20px;
     color: black;
 }
-.location_not_exist img{
+.location_not_exist img
+{
     width: 80%;
 }
