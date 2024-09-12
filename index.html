@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="weather.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="searchbox">
-                <input type="text" placeholder="enter the city..." class="inputbox">
+                <input type="text" placeholder="Enter the location..." class="inputbox" >
                 <button id="searchbtn" class="fa-solid fa-magnifying-glass"></button>
             </div>
         </div>
@@ -20,9 +21,9 @@
             <img src="404.png" alt="#">
         </div>
         <div class="weather_show">
-            <img src="https://static.vecteezy.com/system/resources/previews/021/692/857/non_2x/thunderstorm-cloud-rain-drops-and-lightning-cute-weather-realistic-icon-3d-cartoon-vector.jpg" alt="#" class="wimg">
+            <img src="https://img.freepik.com/premium-photo/picture-sun-with-sun-shining-it_1217673-35134.jpg?w=740" alt="#" class="wimg">
             <div class="weather_box">
-                <p class="temp">0<sup>0</sup>C</p>
+                <p class="temp">1&degC</p>
                 <p class="description">light Rain</p>
             </div>
             <div class="weather_details">
@@ -44,16 +45,5 @@
         </div>
     </div>
 </body>
-<script>
-    const  inputbox= document.querySelector('.inputbox')
-    const searchbtn=document.getElementById('searchbtn')
-    const wimg=document.querySelector('.wimg')
-    const temp=document.querySelector('.temp')
-    const description=document.querySelector('.description')
-    const humidity=document.getElementById('humidity')
-    const wind_speed=document.getElementById('wind_speed')
-    searchbtn.addEventListener('click',()=>{
-        chkWeather(inputbox.value)
-    })
-</script>
+<script src="./script.js"> </script>
 </html>
